@@ -1,0 +1,117 @@
+PayParse-Studio/
+│
+├── public/
+│   ├── images/
+│   ├── icons/
+│   └── logo.svg
+│
+├── src/
+│   │
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   │
+│   │   ├── (workspace)/
+│   │   │   ├── layout.tsx
+│   │   │   │
+│   │   │   ├── dashboard/
+│   │   │   │   └── page.tsx
+│   │   │   │
+│   │   │   ├── playground/
+│   │   │   │   └── page.tsx
+│   │   │   │
+│   │   │   ├── extraction/
+│   │   │   │   └── [documentId]/
+│   │   │   │       └── page.tsx
+│   │   │   │
+│   │   │   ├── column-mapping/
+│   │   │   │   └── page.tsx
+│   │   │   │
+│   │   │   ├── evaluations/
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [evaluationId]/
+│   │   │   │       └── page.tsx
+│   │   │   │
+│   │   │   ├── history/
+│   │   │   │   └── page.tsx
+│   │   │   │
+│   │   │   └── settings/
+│   │   │       └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── layout/
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── Header.tsx
+│   │   │   └── WorkspaceLayout.tsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   ├── StatsCards.tsx
+│   │   │   ├── RecentDocuments.tsx
+│   │   │   └── EngineStatus.tsx
+│   │   │
+│   │   ├── playground/
+│   │   │   ├── DocumentUploader.tsx
+│   │   │   ├── FilePreview.tsx
+│   │   │   ├── ProcessingStatus.tsx
+│   │   │   └── ExtractionConfig.tsx
+│   │   │
+│   │   ├── extraction/
+│   │   │   ├── ExtractionSummary.tsx
+│   │   │   ├── CompanyDetails.tsx
+│   │   │   ├── EmployeeDetails.tsx
+│   │   │   ├── PayrollComponents.tsx
+│   │   │   ├── ExtractedFields.tsx
+│   │   │   └── ConfidenceIndicator.tsx
+│   │   │
+│   │   ├── mapping/
+│   │   │   ├── ColumnMappingTable.tsx
+│   │   │   ├── FieldSelector.tsx
+│   │   │   └── MappingPreview.tsx
+│   │   │
+│   │   └── evaluations/
+│   │       ├── AccuracyOverview.tsx
+│   │       ├── FieldAccuracy.tsx
+│   │       └── EvaluationHistory.tsx
+│   │
+│   ├── services/
+│   │   ├── api-client.ts
+│   │   ├── document.service.ts
+│   │   ├── extraction.service.ts
+│   │   ├── mapping.service.ts
+│   │   └── evaluation.service.ts
+│   │
+│   ├── hooks/
+│   │   ├── useDocuments.ts
+│   │   ├── useExtraction.ts
+│   │   ├── useColumnMapping.ts
+│   │   └── useEvaluations.ts
+│   │
+│   ├── types/
+│   │   ├── document.ts
+│   │   ├── extraction.ts
+│   │   ├── mapping.ts
+│   │   └── evaluation.ts
+│   │
+│   ├── lib/
+│   │   ├── utils.ts
+│   │   ├── file-validation.ts
+│   │   └── formatters.ts
+│   │
+│   ├── mocks/
+│   │   ├── documents.ts
+│   │   ├── extraction.ts
+│   │   └── evaluations.ts
+│   │
+│   └── constants/
+│       ├── navigation.ts
+│       └── payroll-fields.ts
+│
+├── .env.example
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
